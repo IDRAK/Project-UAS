@@ -1,0 +1,841 @@
+*{padding: 0; margin: 0;}
+
+.container {width: 1300px; margin: auto; background: #e8e8e8;}
+
+/* ini css header */
+header {
+	height: 100px; 
+	background: #e8e8e8; 
+	overflow: hidden;
+	z-index: 1;
+}
+header .kiri {
+	margin: 0 0 0 150px;
+}
+header .kiri img {
+	width: 75px;
+	height: 100px;
+	margin: 0 0 0 0; 
+	float: left;
+}
+header .tengah {
+	font-size: 20px; 
+	color: black; 
+	float: left; 
+	margin: 32px 0 0 30px ;
+}
+header .kanan {
+	float: right;
+	height: 45px; 
+	margin: 0 0 0 0;
+}
+header .kanan ul li {
+	text-decoration: none; 
+	color: black; 
+	background: #e8e8e8;
+	list-style: none; 
+	float: left; 
+	line-height: 100px;
+	z-index: 1;
+}
+header .kanan ul li:hover {
+	background: #cccccc;
+	transition: background 0.3s ease-in-out;
+}
+header .kanan ul li a {
+	margin-right: 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 3px 30px;
+}
+header .kanan ul li ul {
+	display: none;
+	position: absolute;
+}
+header .kanan ul li:hover > ul{
+	display: block;
+}
+header .kanan ul li ul li {
+	float: none;
+	position: relative;
+	line-height: 45px;
+}
+header .kanan ul li ul li ul {
+	left: 100%;
+	top: 0;
+	width: 200px;
+}
+article {
+	overflow: hidden;
+}
+article .video {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+}
+article .video video{
+	width: 1300px;
+	height: auto;
+	opacity: 0.5;
+	display: block;
+	position: relative;
+}
+article .title1 {
+	position: absolute;
+	top: 37%;
+	left: 30%;
+}
+article .title1 .tombol {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	background-color: black;
+	padding: 12px;
+	cursor: pointer;
+	color: white;
+	width: 110px;
+	margin-left: 210px;
+}
+article .title1 h1 {
+	color: black;
+	text-align: center;
+	font-size: 90px;
+}
+article .title1 h2 {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+article .form {
+	padding: 10px;
+	position: relative;
+	margin: -72px 0 0px 270px ;
+	background: white;
+	width: 755px;
+	border-bottom: 4px solid black;
+}
+article .form input {
+	line-height: 40px;
+	margin: 2px 0 0 5px;
+	width: 175px;
+	font-size: 15px;
+	border: none;
+	border-right: 1px solid #e8e8e8;
+}
+article .form input.inputtext {
+	padding: 0 0 0 10px;
+}
+article .form select {
+	width: 175px;
+	font-size: 15px;
+	padding: 10px;
+	border: none;
+}
+article .form .button {
+	display: inline;
+}
+article .form .button input{
+	cursor: pointer;
+	border: 3px solid black;
+	background-color: black;
+	color: white;
+}
+article .form .button input:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.member {
+	text-align: center;
+	background: #f4f4f4;
+	color: black;
+	height: 470px;
+}
+.gallery .gallery1 {
+	margin: 0 0 0 50px;
+	float: left;
+}
+.gallery .gallery2, .gallery3, .gallery4, .gallery5 {
+	margin: 0 0 0 40px;
+	float: left;
+}
+.gallery img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	border: 4px solid black;
+	border-radius: 10px;
+}
+.pagination {
+	width: 1300px;
+	margin: 20px 0 0 0;
+	padding: 15px;
+	text-align: center;
+	float: left;
+}
+.pagination a {
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+}
+.pagination a:hover {
+	color: #f79cb5;
+}
+.pagination a.active {
+	color: #f79cb5;
+}
+.albums {
+	text-align: center;
+	background: #dddddd;
+	color: black;
+	height: 760px;
+}
+.albums .list .album1 {
+	margin: 0 0 0 172px;
+	float: left;
+	width: 300px;
+	background: white;
+	border-radius: 5px;
+}
+.albums .list .album2, .album3 {
+	margin: 0 0 0 30px;
+	float: left;
+	width: 300px;
+	background: white;
+	border-radius: 5px;
+}
+.albums .list img {
+	width: 300px;
+	height: 300px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.albums .list .album1 h3,
+.albums .list .album2 h3,
+.albums .list .album3 h3 {
+	margin: 15px 0 0 20px;
+	text-align: left;
+	font-size: 24px;
+}
+.albums .list .album1 h4,
+.albums .list .album2 h4,
+.albums .list .album3 h4 {
+	margin: 0 0 0 20px;
+	text-align: left;
+	font-weight: 100;
+	color: #EB95AD;
+	font-family: Arial;
+	font-size: 14px;
+}
+.albums .list .album1 p,
+.albums .list .album2 p,
+.albums .list .album3 p {
+	margin: 15px 20px 20px 20px;
+	text-align: left;
+	font-family: Arial;
+	font-size: 14px;
+}
+.albums .list .album1 .tomkiri,
+.albums .list .album2 .tomkiri,
+.albums .list .album3 .tomkiri {
+	width: 150px;
+	height: 35px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	float: left;
+}
+.albums .list .album1 .tomkiri a,
+.albums .list .album2 .tomkiri a,
+.albums .list .album3 .tomkiri a {
+	text-decoration: none;
+	line-height: 35px;
+	color: black;
+	font-family: Arial;
+	font-size: 14px;
+}
+.albums .list .album1 .tomkiri a:hover,
+.albums .list .album2 .tomkiri a:hover,
+.albums .list .album3 .tomkiri a:hover {
+	color: #EB95AD;
+	transition: color 0.3s ease-in-out;
+}
+.albums .list .album1 .tomkanan,
+.albums .list .album2 .tomkanan,
+.albums .list .album3 .tomkanan {
+	width: 150px;
+	height: 35px;
+	float: right;
+	border-top: 1px solid black;
+	margin: 0 0 0 -4px;
+}
+.albums .list .album1 .tomkanan a,
+.albums .list .album2 .tomkanan a,
+.albums .list .album3 .tomkanan a {
+	text-decoration: none;
+	line-height: 35px;
+	color: black;
+	font-family: Arial;
+	font-size: 14px;
+}
+.albums .list .album1 .tomkanan a:hover,
+.albums .list .album2 .tomkanan a:hover,
+.albums .list .album3 .tomkanan a:hover {
+	color: #EB95AD;
+	transition: color 0.3s ease-in-out;
+}
+.collab {
+	text-align: center;
+	background: #f4f4f4;
+	color: black;
+	height: 940px;
+}
+.collab .list .artist1 {
+	margin: 0 0 0 95px;
+	float: left;
+	width: 350px;
+	background: white;
+	border-radius: 5px;
+	border: 2px solid #dddddd;
+}
+.collab .list .artist2, .artist3 {
+	margin: 0 0 0 30px;
+	float: left;
+	width: 350px;
+	background: white;
+	border-radius: 5px;
+	border: 2px solid #dddddd;
+}
+.collab .list img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 45px 0 0 0;
+}
+.collab .list .artist1 h3,
+.collab .list .artist2 h3,
+.collab .list .artist3 h3 {
+	margin: 20px 0 0 0;
+}
+.collab .list .artist1 p,
+.collab .list .artist2 p,
+.collab .list .artist3 p {
+	margin: 5px 30px 35px 30px;
+	font-family: Arial;
+	font-size: 14px;
+}
+.collab .pemisah {
+	border-top: 3px solid #dddddd;
+	color: pink;
+	width: 1000px;
+	margin: 370px 0 0 150px;
+}
+.collab .penjelasan {
+	width: 1300px;
+	margin: 60px 0 0 0;
+}
+.collab .penjelasan .agensi {
+	width: 400px;
+	margin: 0 0 0 200px;
+	float: left;
+}
+.collab .penjelasan .agensi h3{
+	text-align: left;
+}
+.collab .penjelasan .agensi p{
+	text-align: left;
+	margin: 30px 0 0 0;
+	font-family: Arial;
+	font-size: 14px;
+}
+.collab .penjelasan .agensi a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	width: 110px;
+	line-height: 40px;
+	border: 2px solid black;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 30px 0 0 0;
+	display: block;
+}
+.collab .penjelasan .agensi a:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.collab .penjelasan .anak {
+	width: 400px;
+	margin: 0 200px 0 0;
+	float: right;
+}
+.collab .penjelasan .anak .satu span,
+.collab .penjelasan .anak .dua span,
+.collab .penjelasan .anak .tiga span {
+	display: none;
+}
+.collab .penjelasan .anak .satu:hover span,
+.collab .penjelasan .anak .dua:hover span,
+.collab .penjelasan .anak .tiga:hover span {
+	display: block;
+	background: #f4f4f4;
+	color: black;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 14px;
+	text-align: left;
+	border: 2px solid #dddddd;
+}
+.collab .penjelasan .anak .satu input,
+.collab .penjelasan .anak .dua input,
+.collab .penjelasan .anak .tiga input {
+	width: 400px;
+	height: 50px;
+	text-align: left;
+	border: 2px solid #dddddd;
+	background-color: #f4f4f4;
+}
+.collab .penjelasan .anak .satu input:hover,
+.collab .penjelasan .anak .dua input:hover,
+.collab .penjelasan .anak .tiga input:hover {
+	background-color: #dddddd;
+}
+.videobawah {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+}
+.videobawah video{
+	width: 1300px;
+	height: auto;
+	opacity: 0.5;
+	display: block;
+	position: relative;
+}
+.videobawah .text {
+	position: relative;
+	top: -350px;
+	left: 400px;
+}
+.videobawah .text img {
+	width: 75px;
+	height: auto;
+	margin: 30px 0 0 215px;
+}
+.classplan {
+	text-align: center;
+	background: #f4f4f4;
+	color: black;
+	height: 690px;
+	margin: -150px 0 0 0;
+}
+.classplan .list .y {
+	margin: 0 0 0 90px;
+	float: left;
+	width: 350px;
+	height: 450px;
+	background: white;
+	border-radius: 5px;
+}
+.classplan .list .g, .x {
+	margin: 0 0 0 40px;
+	float: left;
+	width: 350px;
+	height: 450px;
+	background: white;
+	border-radius: 5px;
+}
+.classplan .list .y .atas,
+.classplan .list .g .atas,
+.classplan .list .x .atas {
+	background-color: black;
+	color: white;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 5px 0 5px 0;
+}
+.classplan .list .y .atas h3,
+.classplan .list .g .atas h3,
+.classplan .list .x .atas h3 {
+	margin: 20px 0 0 0;
+}
+.classplan .list .y .atas h2,
+.classplan .list .g .atas h2,
+.classplan .list .x .atas h2 {
+	margin: 20px 0 0 0;
+}
+.classplan .list .y .atas p,
+.classplan .list .g .atas p,
+.classplan .list .x .atas p {
+	margin: 10px 0 20px 0;
+}
+.classplan .list .y .bawah p,
+.classplan .list .g .bawah p,
+.classplan .list .x .bawah p {
+	margin: 20px 0 0 0;
+}
+.classplan .list .y a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	width: 110px;
+	line-height: 40px;
+	border: 2px solid black;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 100px 0 0 120px;
+	display: block;
+}
+.classplan .list .g a,
+.classplan .list .x a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	width: 110px;
+	line-height: 40px;
+	border: 2px solid black;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 30px 0 0 120px;
+	display: block;
+}
+.classplan .list .y .bawah a:hover,
+.classplan .list .g .bawah a:hover,
+.classplan .list .x .bawah a:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.contact {
+	width: 1300px;
+	height: 200px;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+.contact h2 {
+	font-family: Arial;
+	margin: 0 0 0 20px;
+}
+.contact h3 {
+	margin: 0 0 0 20px;
+}
+.contact a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	width: 110px;
+	line-height: 40px;
+	border: 2px solid black;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 30px 0 0 600px;
+	display: block;
+}
+.contact a:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.akhir {
+	width: 1300px;
+	height: 400px;
+	background-color: #f4f4f4;
+	border-top: 2px solid #dddddd;
+}
+.akhir .kiri {
+	width: 400px;
+	margin: 80px 0 0 100px;
+	float: left;
+}
+.akhir .kiri img{
+	width: 60px;
+	height: auto;
+	float: left;
+	margin: -10px 0 0 0;
+}
+.akhir .kiri h2 {
+	margin: 0 0 0 80px;
+}
+.akhir .kiri p {
+	margin: 40px 0 0 0;
+	font-family: Arial;
+	font-size: 16px;
+}
+.akhir .kiri .logo {
+	margin: 30px 0 0 0;
+}
+.akhir .kiri .logo .instagram {
+	width: 30px;
+	height: 30px;
+	background: url("../images/instagram.png") no-repeat;
+	background-size: cover;
+	float: left;
+}
+.akhir .kiri .logo .instagram:hover {
+	background: url("../images/instagram2.png") no-repeat;
+	background-size: cover;
+}
+.akhir .kiri .logo .twitter {
+	width: 30px;
+	height: 30px;
+	background: url("../images/twitter.png") no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 7px;
+}
+.akhir .kiri .logo .twitter:hover {
+	background: url("../images/twitter2.png") no-repeat;
+	background-size: cover;
+}
+.akhir .kiri .logo .youtube {
+	width: 30px;
+	height: 30px;
+	background: url("../images/youtube.png") no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 7px;
+}
+.akhir .kiri .logo .youtube:hover {
+	background: url("../images/youtube2.png") no-repeat;
+	background-size: cover;
+}
+.akhir .kiri .logo .facebook {
+	width: 30px;
+	height: 30px;
+	background: url("../images/facebook.png") no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 7px;
+}
+.akhir .kiri .logo .facebook:hover {
+	background: url("../images/facebook2.png") no-repeat;
+	background-size: cover;
+}
+.akhir .kiri .logo .weibo {
+	width: 30px;
+	height: 30px;
+	background: url("../images/weibo.png") no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 7px;
+}
+.akhir .kiri .logo .weibo:hover {
+	background: url("../images/weibo2.png") no-repeat;
+	background-size: cover;
+}
+.akhir .tengah {
+	margin: 80px 0 0 40px;
+	width: 300px;
+	float: left;
+}
+.akhir .tengah .tengbawah .tengbawkiri {
+	margin: 40px 0 0 0;
+	float: left;
+}
+.akhir .tengah .tengbawah .tengbawkanan {
+	margin: 40px 0 0 70px;
+	float: left;
+}
+.akhir .tengah .tengbawah .tengbawkiri a,
+.akhir .tengah .tengbawah .tengbawkanan a {
+	text-decoration: none;
+	color: black;
+	font-family: Arial;
+	font-size: 16px;
+}
+.akhir .tengah .bawah .bawkiri a:hover,
+.akhir .tengah .bawah .bawkanan a:hover {
+	color: #f79cb5;
+	transition: color 0.3s ease-in-out;
+}
+.akhir .kanan {
+	float: left;
+	width: 320px;
+	margin: 80px 0 0 40px;
+}
+.akhir .kanan .kanatas p {
+	color: black;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 40px 0 0 0;
+}
+.akhir .kanan .kanbawah .kanbawkiri {
+	float: left;
+	margin: 30px 0 0 0;
+	font-family: Arial;
+	font-size: 16px;
+}
+.akhir .kanan .kanbawah .kanbawkanan {
+	float: left;
+	margin: 30px 0 0 20px;
+}
+.akhir .kanan .kanbawah .kanbawkanan a{
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 16px;
+	color: #f79cb5;
+}
+footer {
+	background: #dddddd; 
+	color: black; 
+	text-align: center; 
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 80px;
+}
+footer a {
+	color: #f79cb5;
+	text-decoration: none;
+
+}
+
+
+.bungkus {
+	background-color: white;
+	width: 660px;
+	height: 570px;
+	margin: 50px 0 50px 320px;
+	border-radius: 10px;
+}
+.profile {
+	overflow: hidden;
+}
+.profile h1 {
+	color: black; 
+	margin-bottom: 10px; 
+	font-size: 30px; 
+	font-family: Helvetica;
+}
+.profile .kiri1 h1 {
+	margin-left: 10px;
+}
+.profile p {
+	text-align: justify; 
+	margin-bottom: 15px;
+	font-family: Arial;
+	font-size: 16px;
+}
+.profile .kiri1 {
+	float: left; 
+	width: 300px;
+	margin: 20px 0 20px 20px;
+}
+.profile .kiri1 img {
+	width: 250px;
+	height: 250px;
+	margin: 0 0 15px 25px;
+}
+.profile .kiri1 p {
+	margin: 0 15px 15px 15px;
+}
+.profile .kanan1 {
+	float: left; 
+	width: 300px;
+	margin: 20px 0 0 40px;
+
+}
+.profile .kanan1 .atas1 p {
+	margin: 20px 15px 15px 0; 
+}
+.profile .kanan1 p {
+	display: inline;
+}
+
+
+.formbawah {
+	width: 1300px;
+	height: 500px;
+	background-color: #dddddd;
+	text-align: center;
+}
+.formbawah .judul {
+	margin: 0 0 0 405px;
+	width: 500px;
+	border-bottom: 2px solid black;
+}
+.formbawah .subjudul {
+	width: 500px;
+	margin: 0 0 0 405px;
+}
+.formbawah .isian {
+	margin: 50px 0 0 0;
+}
+.formbawah .isian input {
+	line-height: 30px;
+	margin: 0 0 0 20px;
+}
+.formbawah .isian input.masukan {
+	line-height: 30px;
+	padding: 0 0 0 10px;
+}
+.formbawah .isian select {
+	margin: 0 0 0 20px;
+	padding: 7px 15px;
+}
+.formbawah .button {
+	margin: 50px 0 0 0;
+}
+.formbawah .button input {
+	padding: 0 50px;
+	color: white;
+	background-color: black;
+	border: 2px solid black;
+	cursor: pointer;
+}
+.formbawah .button input:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.formbawah .tombolbawah {
+	margin: 80px 0 0 0;
+}
+.formbawah .tombolbawah a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	width: 110px;
+	padding: 10px 15px;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0 0 0 20px;
+	border-radius: 5px;
+}
+.formbawah .tombolbawah a:hover {
+	background-color: white;
+	color: black;
+	transition: background 0.3s ease-in-out;
+}
+.formbawah .tombolbawah a.live {
+	text-decoration: none;
+	background-color: #f79cb5;
+	color: black;
+	width: 110px;
+	padding: 10px 15px;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0 0 0 20px;
+	border-radius: 5px;
+}
+.formbawah .tombolbawah a.live:hover {
+	background-color: black;
+	color: #f79cb5;
+	transition: background 0.3s ease-in-out;
+}
+.formbawah .tombolbawah a.download {
+	text-decoration: none;
+	background-color: #f4f4f4;
+	color: black;
+	width: 110px;
+	padding: 10px 15px;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0 0 0 20px;
+	border-radius: 5px;
+}
+.formbawah .tombolbawah a.download:hover {
+	background-color: black;
+	color: #f4f4f4;
+	transition: background 0.3s ease-in-out;
+}
